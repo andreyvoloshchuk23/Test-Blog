@@ -1,0 +1,19 @@
+<div class="nav">
+	<div class="nav_left">
+	</div>
+	<div class="nav_center">
+		<h1 class="logo">jet<span class="logo_light">ro</span></h1>
+		<div class="nav_menu">
+			<span class="nav_menu_line"></span>
+			<span class="nav_menu_line"></span>
+			<span class="nav_menu_line"></span>
+		</div>
+		<ul class="nav_list">
+			{% for item in data.list_nav %}
+				<li class="nav_list_item"><a href="#" class="nav_list_link">{{item.name}}</a></li>
+			{% endfor %}
+		</ul>
+	</div>
+	<div class="nav_right">
+	</div>
+</div>

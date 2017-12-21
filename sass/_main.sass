@@ -1,0 +1,318 @@
+.nav
+	height: 75px
+	&_center
+		width: 69%
+		height: 100%
+		margin: 0 auto
+		display: inline-block
+		margin-left: .5%
+		+r(920)
+			width: 100%
+			margin-left: 0
+	&_left
+		float: left
+		width: 15%
+		height: 100%
+		+r(920)
+			width: 0
+	&_right
+		float: right
+		width: 15%
+		height: 100%
+		+r(920)
+			width: 0		
+.logo
+	width: 10%
+	line-height: 2
+	text-transform: uppercase
+	font-family: "BEBAS"
+	float: left
+	+fs(22.5)
+	color: $orange
+	.logo_light
+		color: $lightorange
+.nav_menu
+	display: none
+	margin: 0 auto
+	position: absolute
+	cursor: pointer
+	right: 20px
+	top: 10px
+	width: 50px
+	height: 50px
+	border: 1px solid $orange
+	border-radius: 3px
+	+r(720)
+		display: block
+	.nav_menu_line
+		width: 90%
+		transition: .5s ease all
+		height: 2px
+		display: block
+		margin: 10px auto
+		background-color: $orange		
+.nav_list
+	width: 90%
+	text-align: right
+	float: right
+	+r(720)
+		display: none
+.nav_list_item
+	display: inline-block
+	margin-left: 5%	
+.nav_list_link
+	text-decoration: none
+	color: $grey
+	text-transform: uppercase
+	+fs(10)
+	letter-spacing: 1px
+	font-family: "BEBAS"
+	line-height: 4.5	
+
+.header
+	height: 60px
+	&_left
+		background-color: $lightorange
+		float: left
+		width: 15%
+		height: 100%
+		+r(920)
+			width: 0
+	&_right
+		background-color: $lightorange
+		float: right
+		width: 15%
+		height: 100%
+		+r(920)
+			width: 0		
+	&_center
+		background-color: $orange
+		width: 69%
+		height: 100%
+		margin: 0 auto
+		display: inline-block
+		margin-left: .5%
+		+r(920)
+			width: 100%
+			margin-left: 0
+.header_title
+	color: #fff
+	font-family: "BEBAS"
+	+fs(15)
+	line-height: 2.3
+	margin-left: 1.5%
+.blog
+	height: 100%
+	margin-top: 25px
+	+clr
+	&_center
+		width: 69%
+		height: 100%
+		margin: 0 auto	
+		+clr
+		+r(920)
+			width: 98%
+.blog_item_article
+	width: 71%
+	float: left
+	position: relative
+	+r(720)
+		width: 100%
+	&:after
+		content: ""
+		width: 75px
+		height: 75px
+		background-image: url("../img/article_icon.jpg")
+		position: absolute
+		top: 0
+		left: -85px		
+		+r(1080)
+			left: -80px
+		+r(920)
+			width: 0	
+.blog_item_picture
+	width: 100%
+	height: 300px
+	background-size: 140% 180%
+	background-repeat: no-repeat
+	&__bgi_1
+		background-size: 140% 180%
+		background-repeat: no-repeat
+		background-position: -80px -80px
+		background-image: url("../img/blog_img.jpg")
+.blog_item_info
+	width: 15%
+	float: left
+	margin-top: 25px
+	h6
+		font-family: "BEBAS"
+		text-transform: uppercase
+		color: $orange
+		+fs(7.5)
+	p
+		color: $lightgrey
+		+fs(7.5)
+		margin: 5px	0 10px 0		
+.blog_item_content
+	width: 80%
+	float: right		
+	margin-top: 25px
+	+clr
+	h4
+		+fs(11.25)
+		text-transform: uppercase
+		color: $orange
+		font-family: "BEBAS"
+		letter-spacing: 100% 
+	p
+		margin: 20px 0 20px 0
+		color: #414141
+		line-height: 18px
+		font-weight: 500
+		+fs(7.5)
+.gradient
+	height: 15px
+	background-image: repeating-linear-gradient(-45deg, lightgrey 0px, lightgrey 1px, white 1px, white 3px)			
+.blog_others
+	width: 25%
+	float: right
+	+r(720)
+		width: 100%
+	.gradient
+		float: right
+		width: 60%
+		+clr		
+	p
+		+fs(7.5)
+		color: #414141
+		display: block
+		padding: 35px 0 35px 0
+	.blog_others_item_caption
+		float: left
+		width: 40%
+		font-family: "BEBAS"
+		color: $orange
+		+fs(8.75)	
+		letter-spacing: 1px
+.blog_others_item
+	+clr	
+.blog_others_list
+	padding-top: 35px
+	margin-bottom: 35px
+.blog_others_list_item
+	+fs(7.5)
+	a
+		color: #414141
+		text-decoration: none
+.blog_others_photo_wrap
+	width: 100%
+	padding-top: 30px
+	display: flex
+	flex-direction: row
+	justify-content: center
+	flex-wrap: wrap
+	align-content: flex-start
+.blog_others_photo_item
+	min-width: 50px
+	width: 20%
+	cursor: pointer
+	height: 50px
+	margin: 3px
+	display: inline-block
+	background-color: $lightorange
+	border: 1px solid $orange		
+.gradient__main
+	width: 71%
+	margin: 50px 0 50px 0	
+	display: block
+	+r(720)
+		width: 100%
+.blog_wrap
+	+clr
+	margin: 50px 0 50px 0	
+.blog_item_picture__bgi_2
+	background-image: url("../img/blog_img_2.jpg")
+	background-size: 110% 100%
+	background-repeat: no-repeat
+	background-position: center center
+.blog_item_article_text	
+	&:after
+		content: ""
+		width: 75px
+		height: 75px
+		background-image: url("../img/article_icon_2.jpg")
+		position: absolute
+		top: 0
+		left: -85px		
+		+r(1080)
+			left: -80px
+.blog_item_article__quote
+	width: 70%
+	height: 100%
+	float: none
+	&:after
+		content: ""
+		width: 75px
+		height: 75px
+		background-image: url("../img/quote_icon.jpg")
+		position: absolute
+		top: 0
+		left: -85px		
+		+r(1080)
+			left: -80px			
+.blog_item_quote
+	width: 100%
+	height: 100%
+	padding: 25px 20px 25px 20px
+	background-color: #f1f1f1
+	p
+		+fs(8.125)
+		font-color: $grey
+		font-style: italic
+		line-height: 18px
+.blog_item_quote_left
+	display: inline-block
+	width: 10%
+	float: left
+	text-align: center
+	height: 100%
+	font-family: "Georgia"
+	+fs(45)
+	color: $orange				
+.blog_item_content_left
+	margin-top: 0
+	width: 100%
+	display: block
+	height: 100%
+	float: none
+.blog_item_info_left	
+	margin-top: 0
+	display: block
+	float: none
+.blog_item_content__big
+	width: 100%	
+	margin-top: 0
+	float: none
+	p
+		margin-bottom: 0
+.blog_item_article__clear
+	width: 70%
+	height: 100%
+	float: none
+	&:after
+		background-image: url("../img/article_icon_3.jpg")
+.blog_pages
+	width: 100%
+	height: 100%
+	margin-bottom: 50px
+.blog_pages_link
+	display: inline-block
+	width: 25px
+	height: 30px
+	background-color: $lightorange
+	color: #fff
+	text-align: center
+	text-decoration: none
+	line-height: 2
+	font-family: "BEBAS"		
+	
