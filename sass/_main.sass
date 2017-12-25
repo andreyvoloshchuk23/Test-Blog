@@ -101,6 +101,32 @@
 	+fs(15)
 	line-height: 2.3
 	margin-left: 1.5%
+.slider
+	width: 100%
+	max-width: 700px
+	height: 300px
+	overflow: hidden
+	position: relative
+	.slider_wrap
+		width: 9999px
+		transition: .5s ease all
+		.slider_item
+			width: 100%
+			max-width: 700px
+			height: 300px
+			float: left
+		.prev
+			position: absolute
+			height: 120px
+			left: 0
+			top: 90px
+			cursor: pointer
+		.next
+			position: absolute
+			height: 120px
+			right: 0
+			top: 90px
+			cursor: pointer		
 .blog
 	height: 100%
 	margin-top: 25px
@@ -212,7 +238,7 @@
 	justify-content: center
 	flex-wrap: wrap
 	align-content: flex-start
-.blog_others_photo_item
+.blog_others_photo_item_wrap
 	min-width: 50px
 	width: 20%
 	cursor: pointer
@@ -220,7 +246,27 @@
 	margin: 3px
 	display: inline-block
 	background-color: $lightorange
-	border: 1px solid $orange		
+	border: 1px solid $orange
+.blog_others_photo_item
+	width: 100%
+	height: 100%
+	z-index: 101		
+.blog_others_photo__big
+	position: fixed
+	top: 50px
+	left: 10%
+	width: 80%
+	height: 80%
+	z-index: 101
+	display: none	
+.close
+	position: fixed
+	top: 20px
+	right: 2%
+	width: 50px
+	height: 50px
+	cursor: pointer
+	z-index: 1000		
 .gradient__main
 	width: 71%
 	margin: 50px 0 50px 0	
